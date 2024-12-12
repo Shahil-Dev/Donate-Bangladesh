@@ -210,7 +210,7 @@
             <div>
               <kbd class="kbd bg-[#1111110D] kbd-lg"
                 ><img src="./Images/coin.png" alt="" />
-                <p>123000 BDT</p></kbd
+                <p id="bangladeshi_taka">123000 BDT</p></kbd
               >
             </div>
             <h2 class="card-title">Aid for Injured in the Quota Movement</h2>
@@ -227,21 +227,23 @@
             </p>
 
             <div class="card-actions justify-end">
+              <p id="enter-3" class="text-red-500 hidden">Please enter amount</p>
+              <p id="reEnter-3" class="text-red-500 hidden">You have not sufficient balance</p>
               <input
-                id="payment"
+                id="show_payment"
                 type="text"
                 placeholder="Type here"
                 class="input input-bordered w-full"
               />
               <button
-                id="click_btn"
+                id="titan"
                 class="btn mt-4 btn-primary w-full"
                 onclick="my_modal_3.showModal()"
               >
                 Donate Now
               </button>
               <dialog id="my_modal_3" class="modal">
-                <div class="modal-box hidden">
+                <div id="ox" class="modal-box hidden">
                   <h3 class="text-center text-[40px] font-bold">Congrats</h3>
                   <p>You have donate for humankind</p>
                   <p>Successfully received</p>
@@ -261,8 +263,10 @@
       </div>
 
        </div>
-    <div class="text-4xl hidden text-center">History</div>
-      <div id="history-div" ></div>
+    <div id="mars" class="text-4xl hidden text-center">History</div>
+      <div id="history-div" >
+        
+      </div>
       </div>
     </main>
     <br /><br />
@@ -324,5 +328,6 @@
     </footer>
     <script src="./basic.js"></script>
     <script src="index.js"></script>
+    <script src="./last.js"></script>
   </body>
 </html>
